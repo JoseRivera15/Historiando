@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historiando</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/historiando.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <script>
+            alert("Bienvenid@ a Historiando")
+            alert("Historiando es una paguina web y app que tiene como objetivo ayudar a los alumnos de 6to de primaria a tener una forma mas intuitiva de aprender la asignatura de historia");
+
+        
+    </script>
+    <!-- start Quiz button -->
+    <center><img src="img/historiando.jpg" alt="" width="250px"></center>   
+    <div class="start_btn"><button>Comenzar Quiz</button></div>
+   
+    <!--reglas -->
+    <div class="info_box">
+        <div class="info-title"><span>Reglas</span></div>
+        <div class="info-list">
+            <div class="info">1. Tendras solo <span>15 segundos </span> para cada pregunta.</div>
+            <div class="info">2. Cuando seleccinoes la respuesta no la podras cambiar.</div>
+            <div class="info">3. Cuando se te acabe el tiempo no podras seleccinar alguna respuesta.</div>
+            <div class="info">4. Una vez iniciado el Quiz no se podra salir.</div>
+            <div class="info">5. Se calificara con base a tus respuestas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Historiando Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Tiempo restante</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Siguiente Pregunta</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Haz completado el Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Repetir</button>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
